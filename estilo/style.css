@@ -46,13 +46,9 @@ body::-webkit-scrollbar {
             font-family: var(--font-padrao);
         
         }
-        a.externo::after{
-            content:'\1F517';
-
-        }
         header { 
             background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-            min-height: 150px;
+            min-height: 200px;
             text-align: center;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
             padding-top: 40px;
@@ -64,6 +60,7 @@ body::-webkit-scrollbar {
             font-size: 3em;
             font-weight: normal;
             margin-bottom: 20px;
+            padding: 10px;
             text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
         }
         header > p {
@@ -77,8 +74,8 @@ body::-webkit-scrollbar {
             text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315)
         }
         .menu{
-            margin-left: 30px;
-            margin-top: 30px;
+            margin-left: 10px;
+            margin-top: 15px;
         }
         .menu .menu-faketrigger{
             position: absolute;
@@ -106,7 +103,7 @@ body::-webkit-scrollbar {
             transition: all ease .2s;
          }
          .menu .menu-faketrigger:checked ~ .menu-lines span{
-            background-color: #000000;
+            background-color: #ff0000;
 
          }
          .menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
@@ -121,31 +118,31 @@ body::-webkit-scrollbar {
             transform-origin: 0% 100%; 
          }
          .menu ul{
-            position: absolute;
+            position: relative;
             z-index: 998;
-            left: 0;
-            top: 0;
+            left: -10px;
+            top: -15px;
             width: 300px;
-            height: 100vh;
-            padding-top: 400px;
+            padding-top: 100px;
+            /* height: calc(98vh - 100px); */
             background-color: #ffffff;
             margin-left: -400px;
             transition: all ease .2s;
          }
          .menu .menu-faketrigger:checked ~ ul{
-            margin: 0;
+            margin-left: 0;
          }
          .menu ul li {
-            padding: 10px 30px;
+            padding: 20px 50px;
          }
-         .menu ul li{
+         .menu ul li a{
             text-decoration: none;
             color: #000;
-            font-size: 22px;
+            font-size: 1.8em;
             transition: all ease .3s;
          }
          .menu ul li a:hover{
-            color: red;
+            color: #999;
          }
          /* nav{
             background-color: var(--cor5);
@@ -166,7 +163,7 @@ body::-webkit-scrollbar {
             color: var(--cor5);
         }  */
         main {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             min-width: 300px;
             max-width: 1000px;
             padding: 20px;
@@ -198,7 +195,7 @@ body::-webkit-scrollbar {
             height: 90%;
         }
 
-        main h1 {
+       main h1 {
             color:  var(--cor4);
             font-family:var(--font-titulo);
             font-weight: bolder;
@@ -223,7 +220,7 @@ body::-webkit-scrollbar {
             color: var(--cor5);
             padding: 2px 6px;
         }
-        main a:hover{
+       main a:hover{
             text-decoration: underline;
             color: var(--cor4);
         }

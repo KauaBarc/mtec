@@ -1,12 +1,12 @@
 
 /* Paletas de cores usadas
 
-#c5ebd6
-$83e1ad
-#3ddc84
-#2fa866
-#1a5c37
-#063d1e
+     #93a1ddc7;
+     #83a9e1;
+     #3d82dc;
+     #275da3;
+     #1a215c;
+     #051144;
 */
 
 @charset "UTF-8";
@@ -20,13 +20,13 @@ $83e1ad
 } 
 
 :root{
-
     --cor0: #93a1ddc7;
     --cor1:#83a9e1;
     --cor2: #3d82dc;
     --cor3: #275da3;
     --cor4: #1a215c;
     --cor5: #051144;
+    --cor6: rgb(13, 155, 199);
     
     --font-padrao: Arial, Helvetica, sans-serif; 
     --font-destaque: 'Bebas Neue', cursive;
@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
             min-height: 200px;
             text-align: center;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
-            padding-top: 40px;
+            padding-top: 50px;
         }
 
         header  > h1 {
@@ -59,19 +59,16 @@ body::-webkit-scrollbar {
             font-family: var(--font-destaque);
             font-size: 3em;
             font-weight: normal;
-            margin-bottom: 20px;
+            text-align: center;
             padding: 25px;
             text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
         }
-        header > p {
+        header a{
+            text-decoration: none;
             color: white;
-            font-size: 1.2em;
-            max-width: 500px;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin: auto;
-            padding-bottom: 40px;
-            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315)
+            font-family: var(--font-destaque);
+            font-size: 1em;
+            font-weight: normal;
         }
         .menu{
             margin-left: 10px;
@@ -130,7 +127,6 @@ body::-webkit-scrollbar {
             padding-top: 55px;
             border-bottom-right-radius: 10px;
             width: 300px;
-            /* height: calc(98vh - 100px); */
             background-color: #ffffff;
             box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.377);
             margin-bottom: -370px;
@@ -141,7 +137,7 @@ body::-webkit-scrollbar {
             margin-left: 0;
          }
          .menu ul li {
-            padding: 20px 50px;
+            padding: 20px 40px;
          }
          .menu ul li a{
             text-decoration: none;
@@ -149,23 +145,42 @@ body::-webkit-scrollbar {
             font-size: 1.8em;
             font-weight: bold;
             padding: 12px;
-            border-radius: 25px;
-            transition-duration: 0.4s;
+            border-radius: 30px;
+            transition-duration: 0.5s;
          }
-         .menu ul li a:hover{
-            color: #999;
-            background-color: black;
+         .menu li a:hover{
+            background-color: rgb(0, 0, 0);
             color: var(--cor2);
+            
          }
+
+        
         main {
             background-color: rgb(255, 255, 255);
             min-width: 300px;
             max-width: 1000px;
             padding: 20px;
+            padding-bottom: 5px;
             margin: auto;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
+        }
+       .tamaf{
+            padding: 10px;
+            max-width: 600px;
+            display:flex;
+            margin: auto;
+            justify-content: center;
+            /* object-fit: cover; */
+        }
+        .tama{
+            padding: 10px 0px;
+            /* max-width: 100%; */
+            width: 100%;
+            height: 50vh;
+            display:flex;
+            margin: auto;
         }
         main img{
             width: 100%;
@@ -174,6 +189,10 @@ body::-webkit-scrollbar {
             max-width: 350px;
             display:block;
             margin: auto;
+            top: 5%;
+            left: 5%; 
+            width: 90%;
+            height: 90%;
         }
         div.video{
             background-color: var(--cor5);
@@ -194,16 +213,16 @@ body::-webkit-scrollbar {
             color:  var(--cor4);
             font-family:var(--font-titulo);
             font-weight: bolder;
-            font-size: 1.8em;
-        }
-        
+            font-size: 2em;
+            text-decoration: none;
+        }        
         main p {
             margin: 5px 0px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             text-align: justify;
             text-indent: 30px;
             font-size: 1.3em;
-            line-height: 2em;
+            line-height: 1.5em;
         }
         main strong{
             color: var(--cor4);
@@ -213,7 +232,7 @@ body::-webkit-scrollbar {
             text-decoration: none;
             font-weight: bold;
             color: var(--cor5);
-            padding: 2px 6px;
+            padding: 5px 0px;
         }
        main a:hover{
             text-decoration: underline;
@@ -221,15 +240,54 @@ body::-webkit-scrollbar {
         }
         main h2 {
             font-family:var(--font-titulo);
-            color: var(--cor4);
+            color: black;
             font-size: 1.5em;
             font-weight: bold;
-            background-image: linear-gradient(to right, var(--cor1), transparent);
-            text-indent: 10px;
+            background-image: linear-gradient(to right, var(--cor2), transparent);
+            text-indent: 2px;
+            padding: 10px;
+            
         }
-
+        .qr{
+            background-color: white;
+            width: 300px;
+            height: 400px;
+            display: block;
+            margin-top: 130px;
+            margin-left: 100px;
+            /* margin: auto; */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+            
+        }
+        .qr1{
+            background-color: white;
+            width: 300px;
+            height: 400px;
+            display: block;
+            margin-top: -440px;
+            margin-left: 600px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+            
+        }
+        .qr p{
+            text-align: justify;
+            color: black;
+            font-weight: bolder;
+            text-indent: 0px;
+        }
     
-        aside{
+        .qr1 p{
+            text-align: justify;
+            color: black;
+            font-weight: bolder;
+            text-indent: 0px;
+        }
+    
+        /* aside{
             background-color: var(--cor1);
             padding: 10px;
             border-radius: 10px;
@@ -247,5 +305,5 @@ body::-webkit-scrollbar {
             list-style-type: '\2714\00A0\00A0';
             list-style-position: inside;
             columns: 2;
-        }
+        } */
 

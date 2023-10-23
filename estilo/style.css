@@ -264,8 +264,20 @@ body::-webkit-scrollbar {
             width: 50%;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-            padding: 15px;
+            padding: 10px;
             text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                
+            }
+
+            .box1 {
+                width: 95%;
+                margin: auto;
+                margin-left: 0px;
+            }
         }
         .container {
             display: flex;
@@ -324,7 +336,7 @@ body::-webkit-scrollbar {
             .box {
                 width: 95%;
                 margin: auto;
-                margin-left: -15px;
+                margin-left: -11px;
             }
         }
         .cor{

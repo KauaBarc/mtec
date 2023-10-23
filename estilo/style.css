@@ -152,6 +152,7 @@ body::-webkit-scrollbar {
          .menu li a:hover{
             background-color: rgb(0, 0, 0);
             color: var(--cor2);
+            padding: 12px;
             
          }
 
@@ -271,16 +272,17 @@ body::-webkit-scrollbar {
             text-align: center;
         }
         .container img{
-            width: 120px;
+            width: 130px;
             border-radius: 50%;
             display: flex;
             margin: auto;
+            margin-top: 100px;
         }
         .container a{
-            padding: 10px;
+            padding: 20px;
             font-size: 24px; 
-            margin: 10px;
-
+            margin: auto;
+            margin-top: 15px;
         }
           .fa-whatsapp {
             color: #25d366; /* Verde WhatsApp */
@@ -305,32 +307,59 @@ body::-webkit-scrollbar {
             font-weight: bolder;
         }
         .box {
-            width: 50%;
+            width: 60%;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-            padding: 15px;
+            padding: 20px;
+            margin: 10px;
+            height: 60vh;
             text-decoration: none;
         }
-        
-        
-        /*  */
-        /* aside{
-            background-color: var(--cor1);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.425);
-        }
-       aside > h3 {
-            background-color:var(--cor4);
-            color: white;
-            padding: 10px;
-            margin: -10px -10px 0 -10px;
-            border-radius: 10px 10px 0px 0px;
-            
-        }
-        aside > ul {
-            list-style-type: '\2714\00A0\00A0';
-            list-style-position: inside;
-            columns: 2;
-        } */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                
+            }
 
+            .box {
+                width: 95%;
+                margin: auto;
+                margin-left: -15px;
+            }
+        }
+        .cor{
+            background-color: black;
+        }
+
+        .cort1 h2{
+            font-family:var(--font-titulo);
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #a1a101, transparent);
+            text-indent: 0px;
+            margin-top: 20px;
+            padding: 10px;
+
+        }
+        .cort2 h2{
+            font-family:var(--font-titulo);
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            font-weight: bold;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--cor2), rgba(0, 0, 0, 0));
+            text-indent: 0px;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        .cort3 h2{
+            font-family:var(--font-titulo);
+            color: #000000;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-image: linear-gradient(to left, #080808, transparent);
+            text-indent: 0px;
+            margin-top: 20px;
+            padding: 15px;
+        }
+       
